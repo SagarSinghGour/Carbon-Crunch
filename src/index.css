@@ -224,23 +224,10 @@ header {
 }
 
  
-@media (min-width: 1400px) {
-  .main-section {
-    
-  }
-}
-
  
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .main-section {
-    
-  }
-}
  
 @media (max-width: 992px) {
-  .main-section {
-      
-  }
+ 
   .main-heading,
   .highlighted-heading {
     font-size: 48px; /*Example reduce font size*/
