@@ -1,0 +1,757 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding-top: 10px;
+    padding-bottom: 4%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.brand-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-item {
+    font-size: 1rem;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #007bff;
+}
+
+.nav-btn {
+    display: flex;
+    gap: 10px;
+}
+
+.Lonig-btn {
+    background-color: #bbf7b1;
+    color: #28B30E;
+    padding: 0.5rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nav-btn {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .Lonig-btn,
+    .contact-btn {
+        width: 100%;
+    }
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-btn {
+        gap: 8px;
+    }
+}
+
+/* Desktop Screens */
+@media (min-width: 1024px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 35px;
+    }
+
+    .nav-btn {
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+ 
+/*   
+.main-container { 
+} */
+
+ 
+.header-section {
+  padding-top: 10px;
+  padding-bottom: 4%;
+}
+
+ 
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3% 0 3%;
+}
+
+ 
+.text-content-wrapper {
+  display: flex;
+  flex-direction: column;  
+  gap: 11px;  
+}
+
+
+.top-message {
+  background: black;
+  width: 30%;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+ 
+.main-heading {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+ 
+.highlighted-heading {
+  font-family: 'Aeonik TRIAL';  
+  font-size: 64px;
+  background: #feab4f;
+  color: white;
+  padding: 10px;
+  border-radius: 40px;
+  text-align: center;
+  width: 85%;
+  margin-bottom: 10px;
+}
+ 
+.supporting-text {
+  font-family: 'DM Sans';   
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.green-text {
+  color: green;
+}
+
+ 
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.free-calculator {
+  font-size: 20px;
+  color: #28b30e;
+}
+
+.book-demo-btn {
+  background: #28b30e;
+  border: none;
+  border-radius: 6px;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  margin-top: -5px;
+  cursor: pointer;  }
+
+ 
+/* .image-wrapper {
+  / Styles for the image container, if needed /
+} */
+
+ 
+.main-image { 
+  max-width: 100%;  
+  height: auto;
+}
+
+ 
+@media (min-width: 1400px) {
+  .main-section {
+    
+  }
+}
+
+ 
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .main-section {
+    
+  }
+}
+ 
+@media (max-width: 992px) {
+  .main-section {
+      
+  }
+  .main-heading,
+  .highlighted-heading {
+    font-size: 48px; /*Example reduce font size*/
+  }
+}
+
+ 
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content-wrapper {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .image-wrapper {
+    width: 100%;
+  }
+
+  .text-content-wrapper {
+    width: 100%;
+    align-items: center;
+  }
+
+  .top-message,
+  .main-heading,
+  .highlighted-heading,
+  .supporting-text,
+  .action-buttons {
+    text-align: center;
+  }
+  .main-heading {
+    font-size: 40px;  
+  }
+  .highlighted-heading {
+    font-size: 40px; 
+  }
+}
+
+ 
+@media (max-width: 480px) {
+  .main-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2%;
+  }
+
+  .text-content-wrapper {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .image-wrapper {
+    width: 100%;
+  }
+  .text-content-wrapper {
+    width: 100%;
+    align-items: center;
+  }
+
+  .top-message,
+  .main-heading,
+  .highlighted-heading,
+  .supporting-text,
+  .action-buttons {
+    text-align: center;
+  }
+
+  .top-message {
+    font-size: 14px;
+    width: 60%;
+  }
+
+  .main-heading,
+  .highlighted-heading {
+    font-size: 24px;
+  }
+
+  .supporting-text {
+    font-size: 16px;
+  }
+
+  .book-demo-btn {
+    width: 80px;
+    height: 30px;
+  }
+}
+
+.contact-btn {
+    background-color: #28B30E;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3% 0 3%;
+
+}
+
+
+.Book-btn {
+    background: #28B30E;
+    border: none;
+    border-radius: 6px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    margin-top: 13px;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1200px;
+    margin-left: 13%;
+    margin-top: 40px;
+}
+
+.stat-box {
+    background-color: #333; 
+    color: white;
+    padding: 8px;
+    text-align: center;
+    border-radius: 8px;
+    width: 22%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+.stat-box:nth-child(2) {
+    background-color: #28B30E;
+    color: black;
+}
+
+.stat-box:nth-child(4) {
+    background-color: black;
+    color: white;
+    text-align: right;
+}
+
+.stat-box:nth-child(3) {
+    background-color: #ddd; 
+    color: #28B30E;
+}
+
+.stat-box h2 {
+    font-size: 3em;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.stat-box p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;  
+        align-items: center;  
+        margin-left: 0;  
+        width: 95%;  
+    }
+
+    .stat-box {
+        width: 90%;  
+        margin-bottom: 20px;  
+    }
+
+    .stat-box h2 {
+        font-size: 2em;  
+    }
+
+    .stat-box p {
+        font-size: 0.9em; 
+    }
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        flex-wrap: wrap; /* Allow boxes to wrap */
+        justify-content: space-around; /* Distribute boxes evenly */
+        margin-left: 5%; /* Adjust left margin */
+        width: 90%; /* Adjust width for tablet */
+    }
+
+    .stat-box {
+        width: 45%; /* Make boxes take up half width on tablet */
+        margin-bottom: 20px; /* Add space between boxes */
+    }
+}
+
+/* Desktop Screens */
+@media (min-width: 1024px) {
+    .container {
+        flex-direction: row; /* Keep boxes in a row */
+        justify-content: space-around; /* Distribute boxes evenly */
+        margin-left: 13%; /* Keep original left margin */
+        width: 90%; /* Keep original width */
+    }
+
+    .stat-box {
+        width: 22%; /* Keep original width */
+    }
+}
+
+.features-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.features-title {
+    font: Aeonik TRIAL;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.feature-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.feature-box {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.feature-icon {
+    margin: 10px;
+}
+
+.feature-img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.feature-box h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+.ab{
+    width: 50px;
+    height: 50px;
+    background: #D6FFD0;
+    border-radius: 21.1px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+    .features-container {
+        width: 95%; /* Adjust width for mobile */
+        margin: 20px auto; /* Reduce margin on mobile */
+        padding: 10px; /* Reduce padding on mobile */
+    }
+
+    .features-title {
+        font-size: 2em; /* Reduce font size on mobile */
+        text-align: center; /* Center title on mobile */
+    }
+
+    .feature-row {
+        flex-direction: column; /* Stack feature boxes vertically */
+    }
+
+    .feature-box {
+        width: 100%; /* Make feature boxes full width on mobile */
+        margin-bottom: 20px; /* Add space between boxes */
+    }
+
+    .feature-box h2 {
+        font-size: 1.2em; /* Reduce font size on mobile */
+    }
+
+    .feature-box p {
+        font-size: 0.9em; /* Reduce font size on mobile */
+    }
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .features-container {
+        width: 90%; /* Adjust width for tablet */
+    }
+
+    .feature-row {
+        flex-wrap: wrap; /* Allow feature boxes to wrap */
+    }
+
+    .feature-box {
+        width: 48%; /* Make feature boxes take up half width on tablet */
+        margin-bottom: 20px; /* Add space between boxes */
+    }
+}
+
+/* Desktop Screens */
+@media (min-width: 1024px) {
+    .features-container {
+        width: 90%; /* Keep original width */
+    }
+
+    .feature-row {
+        flex-wrap: nowrap; /* Prevent feature boxes from wrapping */
+    }
+
+    .feature-box {
+        width: 30%; /* Keep original width */
+    }
+}
+
+.last {
+    width: 100%;
+    display: flex;
+}
+
+.computer {
+    width: 50%;
+    margin-top: 40px;
+}
+
+.services-container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.services-header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.services-header h2 {
+    font-size: 1.2em;
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+.services-header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin: 0;
+}
+
+.service-card {
+    background-color: #F5F5F8;
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+}
+
+.service-card img {
+    width: 250px;
+    margin-right: 30px;
+    border-radius: 8px;
+}
+
+.service-content {
+    flex: 1;
+}
+
+.service-content h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-content p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.see-details-btn {
+    background-color: #e8f5e9;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+    .last {
+        flex-direction: column; /* Stack computer and services vertically */
+    }
+
+    .computer {
+        width: 100%; /* Make computer full width */
+        margin-top: 20px; /* Adjust margin */
+    }
+
+    .services-container {
+        width: 95%; /* Adjust width for mobile */
+        margin: 20px auto; /* Add margin and center */
+    }
+
+    .services-header h1 {
+        font-size: 2em; /* Reduce font size on mobile */
+        text-align: center; /* Center header on mobile */
+    }
+
+    .service-card {
+        flex-direction: column; /* Stack image and content vertically */
+        align-items: center; /* Center content */
+        text-align: center; /* Center text */
+    }
+
+    .service-card img {
+        width: 100%; /* Make image full width */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add space below image */
+    }
+
+    .service-content h3 {
+        font-size: 1.5em; /* Reduce font size on mobile */
+    }
+
+    .service-content p {
+        font-size: 0.9em; /* Reduce font size on mobile */
+    }
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .last {
+        flex-direction: column; /* Stack computer and services vertically */
+    }
+
+    .computer {
+        width: 100%; /* Make computer full width */
+        margin-top: 20px; /* Adjust margin */
+    }
+
+    .services-container {
+        width: 90%; /* Adjust width for tablet */
+    }
+
+    .service-card {
+        flex-direction: row; /* Keep image and content in a row */
+        align-items: flex-start; /* Align to the start */
+        text-align: left; /* Left align text */
+    }
+
+    .service-card img {
+        width: 200px; /* Adjust image width */
+        margin-right: 20px; /* Add right margin */
+    }
+}
+
+/* Desktop Screens */
+@media (min-width: 1024px) {
+    .last {
+        flex-direction: row; /* Keep computer and services in a row */
+    }
+
+    .computer {
+        width: 50%; /* Keep original width */
+    }
+
+    .services-container {
+        width: 90%; /* Keep original width */
+    }
+
+    .service-card {
+        flex-direction: row; /* Keep image and content in a row */
+        align-items: flex-start; /* Align to the start */
+        text-align: left; /* Left align text */
+    }
+
+    .service-card img {
+        width: 250px; /* Keep original width */
+        margin-right: 30px; /* Keep original margin */
+    }
+}
