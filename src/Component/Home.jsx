@@ -166,7 +166,7 @@ export default function Home() {
                     <div class="service-card">
                         <div class="service-content">
                             <h3 style={{ fontSize: "48px" }}><b>GHG Accounting</b></h3>
-                            <p style={{ fontSize: "16px" }}>We provide GHG accounting services, measuring and reporting Scope 1, 2, and 3 emissions. Our process ensures compliance and helps organizations track and reduce their carbon footprint.</p>
+                            <p style={{ fontSize: "16px" }}>We provide GHG accounting services, measuring and reporting Scope 1, 2, and 3 emissions. Our process ensures compliance and helps organizations track and reduce their carbon footprint</p>
                             <button class="see-details-btn">See More Details</button>
                         </div>
                     </div>
@@ -175,7 +175,7 @@ export default function Home() {
 
                         <div class="service-content">
                             <h3 style={{ fontSize: "48px" }}><b>GHG Accounting</b></h3>
-                            <p style={{ fontSize: "16px" }}>We provide GHG accounting services, measuring and reporting Scope 1, 2, and 3 emissions. Our process ensures compliance and helps organizations track and reduce their carbon footprint.</p>
+                            <p style={{ fontSize: "16px" }}>We provide GHG accounting services, measuring and reporting Scope 1, 2, and 3 emissions. Our process ensures compliance and helps organizations track and reduce their carbon footprint</p>
                             <button class="see-details-btn">See More Details</button>
                         </div>
                     </div>
